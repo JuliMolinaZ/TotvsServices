@@ -17,7 +17,7 @@ class APIClient:
                 self.url,
                 auth=self.auth,
                 json=payload,
-                verify=True  # Es recomendable manejar certificados correctamente
+                verify=True
             )
             if response.status_code == 200:
                 try:
